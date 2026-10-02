@@ -7,31 +7,66 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <style>
+        body{
+            background: linear-gradient(90deg, #38536b 0%, #8dbbd1 100%);
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+            align-items: center;
+        }
+        .mainnav{
+            text-decoration: none;
+            color: white;
+            font-weight: 900;
+            padding: 0 10px;
+        }
+        .logo{
+            height: 100px;
+        }
+        content-creator{
+            display: flex;
+            justify-content: space-between;
+        }
+        .right-side{
+            width: 50%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+    </style>
     <header>
-    <img src="polerstarlogo.png" alt="Polestar Logo">
-    <nav>
-        <a class="mainnav" href="index.html">Home</a>
-        <a class="mainnav" href="PreOrder.html">Order</a>
-        <a class="mainnav" href="Specs.html">Order</a>
-        <a class="mainnav" href="FAQ.html">Order</a>
-        <a class="mainnav" href="Contact.html">Order</a>
+        <a class="logo" href="index.html">
+            <img class="logo" src="polerstarlogo.png" alt="Polestar Logo">
+        </a>
+        <nav>
+            <a class="mainnav" href="PreOrder.html">PreOrder</a>
+            <a class="mainnav" href="Specs.html">Specs</a>
+            <a class="mainnav" href="FAQ.html">FAQ</a>
+            <a class="mainnav" href="Contact.html">Contact</a>
         </nav>
     </header>
-    <section class="card">
-        <h1>0-100 3.6s</h1>
-        <img src="car.png" alt="Car Image">
-        <img src="plasma.png" alt="Backdrop splash">
-        <p>Don't bother, you will lose that stoplight sprint ;)</p>
-    </section>
-    <order>
-        <h1>Pre-Order Polestar 6</h1>
-        <form>
-            <label for="name">Uw volledige naam</label>
-            <input type="text" id="name">
-            <label for="email">Uw emailadres</label>
-            <button>Ja, ik wil de roadster cabrio met drone dinges</button>
-        </form>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </order>
+    <main class="content-creator">
+        <section class="left-side">
+            <h1>0-100 <span style="font-size: 60px">3.6s</span></h1>
+            <img src="car.png" alt="Car Image">
+            <img src="plasma.png" alt="Backdrop splash">
+            <p>Don't bother, you will lose that stoplight sprint ;)</p>
+        </section>
+        <section class="right-side">
+            <h1>Pre-Order Polestar 6</h1>
+            <form>
+                <label for="name">Uw volledige naam</label>
+                <input type="text" id="name">
+                <label for="email">Uw emailadres</label>
+                <input type="email" id="email">
+                <button>Ja, ik wil de roadster cabrio met drone dinges</button>
+            </form>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+    </main>
 </body>
 </html>
